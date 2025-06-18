@@ -28,10 +28,10 @@ print(Sol.largestElement([3, 3, 0, 99, -40]))
 
 # Adding Basic Manual Testing Now
 
-class Solution:
-    def largestElement(self, arr):
-        if not arr:
-            raise ValueError("Array is Empty")
+class Solution:     # defines a class named Solution
+    def largestElement(self, arr):   # defines a method called largestElement inside the Solution class
+        if not arr:   # This line checks if the array is empty
+            raise ValueError("Array is Empty")   # If the array is empty, raise a ValueError with a custom message
         largest = arr[0]
         for num in arr:
             if num > largest:
