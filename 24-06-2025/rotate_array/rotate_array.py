@@ -9,3 +9,12 @@ from typing import List
 def rotate_array(nums: List[int], k: int) -> List[int]:
 
     n = len(nums)
+
+    if n == 0:
+        return []
+    
+    k = k % n
+
+    rotated = nums[-k:] + nums[:-k]
+
+    return rotated
