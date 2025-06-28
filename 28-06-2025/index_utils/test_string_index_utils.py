@@ -1,4 +1,9 @@
 
+from .regex_utils import extract_numbers, extract_words, is_valid_email  # ← if using as a package
+
+# OR use relative path without dot if run directly:
+# from regex_utils import extract_numbers, extract_words, is_valid_email
+
 
 def test_find_first_index():
     assert find_first_index("banana", "a") == 1
